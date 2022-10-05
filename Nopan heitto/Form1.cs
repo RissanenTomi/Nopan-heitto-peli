@@ -42,6 +42,8 @@ namespace Nopan_heitto
 
             labelPlayer1.Text = luku1.ToString();
 
+            buttonPlayer1Roll.Enabled = false;
+
             // otetaan talteen, että pelaaja 1 on heittänyt nopan
 
             // jos pelaaja 2 on heittänyt nopan, tarkistetaan voittaja
@@ -64,6 +66,7 @@ namespace Nopan_heitto
 
             labelPlayer2.Text = luku2.ToString();
 
+            buttonPlayer2Roll.Enabled = false;
 
             // otetaan talteen, että pelaaja 2 on heittänyt nopan
 
@@ -96,6 +99,9 @@ namespace Nopan_heitto
 
             noppa1Heitetty = false;
             noppa2Heitetty = false;
+
+            buttonPlayer1Roll.Enabled = true;
+            buttonPlayer2Roll.Enabled = true;
 
             luku1 = 0;
             luku2 = 0;
